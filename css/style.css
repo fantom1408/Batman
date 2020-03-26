@@ -293,8 +293,8 @@ body {
     /* border-radius: 5px; */
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-left: 18px;
-    padding-right: 0px;
+    padding-left: 1px;
+    padding-right: 4px;
     border: none;
     color: #AEAEAE;
     font-size: 14px;
