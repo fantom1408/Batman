@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css\animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -27,14 +29,14 @@
             </div>
         </header>
         <main class="main">
-            <h1 class="title">Бэтмен</h1>
-            <small class="title-en">The Batman</small>
-            <div class="info">
+            <h1 class="title animated fadeInRight">Бэтмен</h1>
+            <small class="title-en animated fadeInRight">The Batman</small>
+            <div class="info animated fadeInUp delay-2s">
 
                 <div class="movie-info">
                     <span class="tag">Фильм</span>
                     <span class="country">США, 2021 год</span>
-                    <a href="#" class="play">Смотреть трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play">Смотреть трейлер</a>
                 </div>
                 <a href="#" class="more">Подробнее</a>
             </div>
@@ -60,20 +62,20 @@
                 <!-- /.short-info -->
                 <div class="full-info">
                     <nav class="tabs">
-                        <a href="#" class="tabs-item tabs-item-active">Описание</a>
-                        <a href="#" class="tabs-item">Рецензии</a>
-                        <a href="#" class="tabs-item">Премьеры</a>
-                        <a href="#" class="tabs-item">Актеры</a>
-                        <a href="#" class="tabs-item">Награды</a>
-                        <a href="#" class="tabs-item">Факты</a>
-                        <a href="#" class="tabs-item">Сайты</a>
+                        <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+                        <a href="#reviews" class="tabs-item">Рецензии</a>
+                        <a href="#premieres" class="tabs-item">Премьеры</a>
+                        <a href="#actors" class="tabs-item">Актеры</a>
+                        <a href="#rewards" class="tabs-item">Награды</a>
+                        <a href="#evidence" class="tabs-item">Факты</a>
+                        <a href="#websites" class="tabs-item">Сайты</a>
                         <a href="#" class="tabs-item">
                             <img src="./img/bookmark-icon.svg" alt="bookmark" class="bookmark-added">
                         </a>
                     </nav>
 
                     <div class="full-content">
-                        <div class="tabs-content">
+                        <div class="tabs-content visible" id="about">
                             <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых
                                 комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет
                                 перезагрузкой всех фильмов о Бэтмене.</p>
@@ -102,6 +104,24 @@
                             сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда
                             Уилсона, который, возможно, станет главным злодеем фильма.</p>
                         </div>
+                        <div class="tabs-content" id="reviews">
+                            <p class="text">Тут скоро появятся Рецензии</p>
+                        </div>
+                        <div class="tabs-content" id="premieres">
+                            <p class="text">Тут скоро появятся Премьеры</p>
+                        </div>
+                        <div class="tabs-content" id="actors">
+                            <p class="text">Тут скоро появятся Актеры</p>
+                        </div>
+                        <div class="tabs-content" id="rewards">
+                            <p class="text">Тут скоро появятся Награды</p>
+                        </div>
+                        <div class="tabs-content" id="evidence">
+                            <p class="text">Тут скоро появятся Факты</p>
+                        </div>
+                        <div class="tabs-content" id="websites">
+                            <p class="text">Тут скоро появятся Сайты</p>
+                        </div>
                         <div class="subscribe">
                             <!-- тут будет форма -->
                             <h3 class="subscribe-title">Подпишитесь на обновления</h3>
@@ -123,6 +143,13 @@
             </div>
         </main>
     </div>
+<!--Подключаем библиотеку JQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<!--подключаем Fancybox-->
+<script src="js/jquery.fancybox.min.js"></script>
+<!--подключаем свои скрипты-->
+<script src="js/main.js"></script>
+
 
 </body>
 
